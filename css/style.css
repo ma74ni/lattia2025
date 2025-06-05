@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  background: #fff8f0;
+  color: #1D1D1B;
+}
+a{
+  text-decoration: none;
+}
+p{
+  font-size: 12px;
+  margin: 0;
+}
+
+.custom-header {
+  background-image: url("../assets/images/gotas_naranjas.png");
+  background-repeat: repeat-x;
+  background-position: center;
+  background-position: top;
+}
+
+
+.btn-wsp {
+  background: #25D366;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-wsp:hover {
+  background: #1ebe5d;
+}
+
+.form-cliente {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.form-cliente input,
+.form-cliente textarea {
+  width: 100%;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  border: 1px solid #ccc;
+}
+
+.form-cliente label {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.blog {
+  padding: 2rem;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.blog-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.blog-card img {
+  max-width: 100%;
+  border-radius: 0.3rem;
+}
+
+.blog-card h3 {
+  margin: 0.5rem 0;
+}
+
+.blog-card p {
+  font-size: 0.9rem;
+}
+
+.blog-card button {
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  background: #3a86ff;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.nosotros {
+  padding: 2rem;
+}
+
+.nosotros p {
+  margin: 1rem 0;
+}
+
+.equipo-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.equipo-card {
+  flex: 1 1 180px;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.equipo-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.contacto {
+  padding: 2rem;
+}
+
+.contacto ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contacto li {
+  margin: 0.5rem 0;
+}
+
+.mapa iframe {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+

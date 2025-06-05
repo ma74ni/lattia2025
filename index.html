@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heladería Lattia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Space Grotesk"', "sans-serif"],
+              nerko: ['"Nerko One"', "sans-serif"],
+            },
+            colors: {
+              lila: "#822181",
+              crema: "#fff6a0",
+              naranja: "#f18700",
+              green: "#bdd24d",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  </head>
+  <body class="font-sans">
+    <div id="app" class="min-h-screen flex flex-col">
+      <header class="custom-header bg-white px-4 pb-4 pt-2">
+        <div class="max-w-7xl mx-auto">
+          <p class="text-center md:text-right text-sm text-white">
+            Pedidos a domicilio:
+            <a
+              href="https://wa.me/+593999293638"
+              target="_blank"
+              class="font-semibold"
+              >+593 99 929 3638</a
+            >
+          </p>
+
+          <!-- Main Header -->
+          <div
+            class="flex flex-col md:flex-row justify-between items-center md:items-end gap-4 mt-2"
+          >
+            <!-- Logo -->
+            <img
+              src="./assets/images/logo_lattia.svg"
+              alt="Logo Lattia"
+              class="w-36 md:w-48 h-auto"
+            />
+
+            <!-- Mobile Hamburger Button -->
+            <div class="md:hidden flex justify-end mb-2">
+              <button
+                @click="mostrarMenu = !mostrarMenu"
+                class="text-lila focus:outline-none"
+              >
+                <i
+                    data-lucide="menu"
+                    class="w-5 h-5 text-lila"
+                  ></i>
+              </button>
+            </div>
+            <!-- Navigation + Cart -->
+            <div
+              class="flex flex-col md:flex-row justify-end items-center gap-4 w-full md:w-auto"
+            >
+              <!-- Nav -->
+              <nav v-if="mostrarMenu || esEscritorio" class="flex flex-col md:flex-row">
+                <a
+                  href="#/"
+                  class="px-2 border-b-2 border-transparent hover:border-crema"
+                  >Inicio</a
+                >
+                <a
+                  href="#/menu"
+                  class="px-2 border-b-2 border-transparent hover:border-crema"
+                  >Menú</a
+                >
+                <a
+                  href="#/nosotros"
+                  class="px-2 border-b-2 border-transparent hover:border-crema"
+                  >Nosotros</a
+                >
+                <a
+                  href="#/blog"
+                  class="px-2 border-b-2 border-transparent hover:border-crema"
+                  >Blog</a
+                >
+                <a
+                  href="#/contacto"
+                  class="px-2 border-b-2 border-transparent hover:border-crema"
+                  >Contacto</a
+                >
+              </nav>
+
+              <!-- Cart -->
+              <div
+                class="relative cursor-pointer"
+                @click="mostrarCarrito = !mostrarCarrito"
+              >
+                <div class="relative">
+                  
+                  <i
+                    data-lucide="shopping-basket"
+                    class="w-5 h-5 text-lila"
+                  ></i>
+                  <span
+                    class="absolute top-[-5px] right-[-10px] bg-lila text-white rounded-full w-4 h-4 text-xs flex items-center justify-center"
+                    >{{ carrito.length }}</span
+                  >
+                </div>
+
+                <!-- Cart Panel -->
+                <div
+                  v-if="mostrarCarrito"
+                  class="absolute right-0 mt-2 w-72 bg-white border rounded shadow-lg p-4 z-50"
+                >
+                  <h4 class="font-semibold mb-2">Tu carrito</h4>
+                  <div v-if="carrito.length === 0">Vacío</div>
+                  <ul class="max-h-48 overflow-y-auto text-sm space-y-1">
+                    <li
+                      v-for="(item, index) in carrito"
+                      class="flex justify-between items-center"
+                    >
+                      {{ item.nombre }} - ${{ item.precio.toFixed(2) }}
+                      <button
+                        @click.stop="quitarDelCarrito(index)"
+                        class="text-red-600"
+                      >
+                        ❌
+                      </button>
+                    </li>
+                  </ul>
+                  <p class="mt-2 font-bold">
+                    Total: ${{ totalCarrito.toFixed(2) }}
+                  </p>
+                  <form
+                    class="flex flex-col gap-2 mt-2 text-sm"
+                    @submit.prevent="enviarPorWhatsapp"
+                  >
+                    <input
+                      type="text"
+                      v-model="nombreCliente"
+                      placeholder="Nombre completo"
+                      required
+                      class="border p-1 rounded"
+                    />
+                    <input
+                      type="tel"
+                      v-model="telefonoCliente"
+                      placeholder="Teléfono"
+                      required
+                      class="border p-1 rounded"
+                    />
+                    <textarea
+                      v-model="direccionCliente"
+                      placeholder="Dirección (si es delivery)"
+                      rows="2"
+                      class="border p-1 rounded"
+                    ></textarea>
+                    <label class="flex items-center gap-2"
+                      ><input
+                        type="radio"
+                        v-model="tipoEntrega"
+                        value="Domicilio"
+                        checked
+                      />
+                      Domicilio</label
+                    >
+                    <label class="flex items-center gap-2"
+                      ><input
+                        type="radio"
+                        v-model="tipoEntrega"
+                        value="Recoger en local"
+                      />
+                      Recoger en local</label
+                    >
+                    <button
+                      type="submit"
+                      class="bg-green-500 text-white py-1 rounded hover:bg-green-600"
+                    >
+                      Finalizar pedido
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="flex-1">
+        <component :is="currentView"></component>
+      </main>
+
+      <footer class="bg-naranja text-white text-center p-3 mt-auto">
+        📍 Sur de Quito | 📞 0999999999 | 🍦 Desde 1997 con cariño
+      </footer>
+    </div>
+
+    <script src="js/mock.js"></script>
+    <script>
+      lucide.createIcons(); // solo inicializa una vez
+    </script>
+    <script src="js/components/Home.js"></script>
+    <script src="js/components/Menu.js"></script>
+    <script src="js/components/ProductModal.js"></script>
+    <script src="js/components/ArmaTuProducto.js"></script>
+    <script src="js/components/Blog.js"></script>
+    <script src="js/components/About.js"></script>
+    <script src="js/components/Contact.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
