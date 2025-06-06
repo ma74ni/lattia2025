@@ -18,6 +18,19 @@ p{
   background-position: top;
 }
 
+.patron{
+  background-image: url("../assets/images/patron_lattia.png");
+  background-repeat: repeat;
+  background-position: center;
+  background-position: top;
+}
+
+.linea{
+  background-image: url("../assets/images/linea.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 .btn-wsp {
   background: #25D366;

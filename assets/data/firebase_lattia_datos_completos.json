@@ -1,0 +1,676 @@
+{
+  "productos": [
+    {
+      "nombre": "Cono Tía",
+      "descripcion": "Cono Tía artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 2.6,
+        "local2": 2.6,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Cono Mega",
+      "descripcion": "Cono Mega artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": false,
+      "preciosPorLocal": {
+        "local1": 2.0,
+        "local2": 2.0,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Cono Doble",
+      "descripcion": "Cono Doble artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 1.8,
+        "local2": 1.8,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Cono Simple",
+      "descripcion": "Cono Simple artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 1.25,
+        "local2": 1.25,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Cono Mini",
+      "descripcion": "Cono Mini artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 0.6,
+        "local2": 0.6,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "BananaSplit Grande",
+      "descripcion": "BananaSplit Grande artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 3.5,
+        "local2": 3.5,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Tulipán Doble",
+      "descripcion": "Tulipán Doble artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 2.8,
+        "local2": 2.8,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Tulipán Simple",
+      "descripcion": "Tulipán Simple artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 2.25,
+        "local2": 2.25,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Salpicón Grande",
+      "descripcion": "Mix de fruta tropical + helado soft + crema + queso + topping y aderezo al gusto.",
+      "imagen": "./assets/images/products/salpicon.png",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 2.75,
+        "local2": 2.75,
+        "local3": null
+      },
+      "localesDisponibles": [],
+      "destacado": true
+    },
+    {
+      "nombre": "Milkshake Grande",
+      "descripcion": "Milkshake Grande artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 2.75,
+        "local2": 2.75,
+        "local3": null
+      },
+      "localesDisponibles": [],
+      "destacado": false
+    },
+    {
+      "nombre": "Palito Grande",
+      "descripcion": "Palito Grande artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 1.0,
+        "local2": 1.0,
+        "local3": null
+      },
+      "localesDisponibles": [],
+      "destacado": false
+    },
+    {
+      "nombre": "Palito Pequeño",
+      "descripcion": "Palito Pequeño artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 0.6,
+        "local2": 0.6,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Chocobanana Simple",
+      "descripcion": "Chocobanana Simple artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": false,
+      "preciosPorLocal": {
+        "local1": 0.75,
+        "local2": 0.75,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Chocobanana Toppings",
+      "descripcion": "Chocobanana Toppings artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": false,
+      "preciosPorLocal": {
+        "local1": 1.0,
+        "local2": 1.0,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Ensalada Frutas Simple",
+      "descripcion": "Ensalada Frutas Simple artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": false,
+      "preciosPorLocal": {
+        "local1": 1.0,
+        "local2": 1.0,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Ensalada Frutas Espumilla",
+      "descripcion": "Ensalada Frutas Espumilla artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 1.5,
+        "local2": 1.5,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Ensalada Frutas Crema",
+      "descripcion": "Ensalada Frutas Crema artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": false,
+      "preciosPorLocal": {
+        "local1": 1.8,
+        "local2": 1.8,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Ensalada Frutas Helado",
+      "descripcion": "Ensalada Frutas Helado artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 2.0,
+        "local2": 2.0,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Ensalada Frutas Helado + Crema",
+      "descripcion": "Ensalada Frutas Helado + Crema artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 2.5,
+        "local2": 2.5,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Waffle",
+      "descripcion": "Delicioso waffle con fruta picada + helado + crema + topping y aderezo al gusto.",
+      "imagen": "./assets/images/products/waffle.png",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 3.5,
+        "local2": 3.5,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1"
+      ],
+      "destacado": true
+    },
+    {
+      "nombre": "Espumilla Pequeña",
+      "descripcion": "Espumilla Pequeña artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 0.5,
+        "local2": 0.5,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Espumilla Grande",
+      "descripcion": "Espumilla Grande artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 1.0,
+        "local2": 1.0,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Gelatina Simple",
+      "descripcion": "Gelatina Simple artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 0.5,
+        "local2": 0.5,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Gelatina Crema",
+      "descripcion": "Gelatina Crema artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 1.0,
+        "local2": 1.0,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Gelatina Espumilla",
+      "descripcion": "Gelatina Espumilla artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 1.0,
+        "local2": 1.0,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Flan Simple",
+      "descripcion": "Flan Simple artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 1.0,
+        "local2": 1.0,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Flan Crema",
+      "descripcion": "Flan Crema artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 1.5,
+        "local2": 1.5,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Flan Espumilla",
+      "descripcion": "Flan Espumilla artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": false,
+      "preciosPorLocal": {
+        "local1": 1.5,
+        "local2": 1.5,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Granizado Pequeño",
+      "descripcion": "Granizado Pequeño artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": false,
+      "preciosPorLocal": {
+        "local1": 0.5,
+        "local2": 0.5,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Granizado Grande",
+      "descripcion": "Granizado Grande artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": false,
+      "preciosPorLocal": {
+        "local1": 1.0,
+        "local2": 1.0,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "1 Litro Helado",
+      "descripcion": "1 Litro Helado artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 6.0,
+        "local2": 6.0,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "1/2 Litro Helado",
+      "descripcion": "1/2 Litro Helado artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": false,
+      "preciosPorLocal": {
+        "local1": 3.5,
+        "local2": 3.5,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Con Queso Soft",
+      "descripcion": "Con Queso Soft artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 3.5,
+        "local2": 3.5,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Queso Tres Sabores",
+      "descripcion": "3 sabores de helado separados cada uno con una capa de queso y tu aderezo favorito. Terminando con crema, queso y topping a tu elección.",
+      "imagen": "./assets/images/products/queso_3_sabores.png",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 3.5,
+        "local2": 3.5,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": true
+    },
+    {
+      "nombre": "Soft Grande",
+      "descripcion": "Soft Grande artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 2.0,
+        "local2": 2.0,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Soft Pequeño",
+      "descripcion": "Soft Pequeño artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 1.5,
+        "local2": 1.5,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Cono Soft Simple",
+      "descripcion": "Cono Soft Simple artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 1.0,
+        "local2": 1.0,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Fresas Chocolate",
+      "descripcion": "Fresas Chocolate artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 1.75,
+        "local2": 1.75,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Fresas Espumilla",
+      "descripcion": "Fresas Espumilla artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 2.0,
+        "local2": 2.0,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Fresas Crema",
+      "descripcion": "Fresas Crema artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 2.0,
+        "local2": 2.0,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": false
+    },
+    {
+      "nombre": "Fresas Choco + Crema",
+      "descripcion": "Fresas Choco + Crema artesanal preparado con ingredientes seleccionados para disfrutar en familia.",
+      "mostrarWeb": true,
+      "preciosPorLocal": {
+        "local1": 2.5,
+        "local2": 2.5,
+        "local3": null
+      },
+      "localesDisponibles": [
+        "local1",
+        "local2"
+      ],
+      "destacado": false
+    }
+  ],
+  "articulos_blog": [
+    {
+      "titulo": "¿Cómo se hace nuestro helado artesanal?",
+      "contenido": "Nuestros helados se elaboran con fruta natural, leche fresca y mucho amor.",
+      "imagen": "https://ejemplo.com/imagen-articulo1.jpg",
+      "fecha": "2025-06-04"
+    },
+    {
+      "titulo": "Beneficios de la espumilla natural",
+      "contenido": "La espumilla de frutas naturales no solo es deliciosa, también nutritiva.",
+      "imagen": "https://ejemplo.com/imagen-articulo2.jpg",
+      "fecha": "2025-05-20"
+    }
+  ],
+  "locales": [
+    {
+      "id": "local1",
+      "nombre": "Sucursal Sur",
+      "direccion": "Av. Principal y Calle Secundaria",
+      "telefono": "0999999991"
+    },
+    {
+      "id": "local2",
+      "nombre": "Sucursal Norte",
+      "direccion": "Av. Amazonas y Colón",
+      "telefono": "0999999992"
+    },
+    {
+      "id": "local3",
+      "nombre": "Sucursal Centro",
+      "direccion": "Calle Bolívar y Venezuela",
+      "telefono": "0999999993"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "user1",
+      "nombre": "Admin Lattia",
+      "email": "admin@lattia.com",
+      "rol": "admin"
+    }
+  ],
+  "colaboradores": [
+    {
+      "nombre": "Joan",
+      "rol": "Producción",
+      "local": "local1"
+    },
+    {
+      "nombre": "Macho",
+      "rol": "Ayudante",
+      "local": "local1"
+    }
+  ],
+  "menu_items": [
+    {
+      "categoria": "Conos",
+      "productos": [
+        "Cono Tía",
+        "Cono Mega",
+        "Cono Doble",
+        "Cono Simple",
+        "Cono Mini",
+        "Cono Soft Simple"
+      ]
+    },
+    {
+      "categoria": "Tulipanes",
+      "productos": [
+        "Tulipán Doble",
+        "Tulipán Simple"
+      ]
+    }
+  ]
+}

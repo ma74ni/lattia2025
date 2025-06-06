@@ -10,3 +10,4 @@ const mockArticle = {
   image: "img/blog1.jpg",
   link: "#/blog"
 };
+
