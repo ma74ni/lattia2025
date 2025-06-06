@@ -41,7 +41,7 @@ const Menu = {
   `,
   methods: {
     renderPage(pageNum) {
-      this.pdfDoc.getPage(pageNum).then(page => {
+      this.pdfDoc.getPage(pageNum).then((page) => {
         const container = document.getElementById("pdf-container");
         const canvas = document.getElementById("pdf-canvas");
         const context = canvas.getContext("2d");
@@ -51,8 +51,13 @@ const Menu = {
         const scale = desiredWidth / viewport.width;
         const scaledViewport = page.getViewport({ scale });
 
-        canvas.height = scaledViewport.height;
-        canvas.width = scaledViewport.width;
+        // 👇 Mejora de nitidez
+        const ratio = window.devicePixelRatio || 1;
+        canvas.width = scaledViewport.width * ratio;
+        canvas.height = scaledViewport.height * ratio;
+        canvas.style.width = scaledViewport.width + "px";
+        canvas.style.height = scaledViewport.height + "px";
+        context.setTransform(ratio, 0, 0, ratio, 0, 0);
 
         page.render({
           canvasContext: context,
@@ -60,6 +65,7 @@ const Menu = {
         });
       });
     },
+
     prevPage() {
       if (this.currentPage > 1) {
         this.currentPage--;
@@ -76,12 +82,15 @@ const Menu = {
   mounted() {
     const url = "./assets/pdf/menu_v3.pdf";
 
-    window.pdfjsLib.getDocument(url).promise.then(pdf => {
-      this.pdfDoc = pdf;
-      this.totalPages = pdf.numPages;
-      this.renderPage(this.currentPage);
-    }).catch(err => {
-      console.error("Error cargando el PDF:", err);
-    });
+    window.pdfjsLib
+      .getDocument(url)
+      .promise.then((pdf) => {
+        this.pdfDoc = pdf;
+        this.totalPages = pdf.numPages;
+        this.renderPage(this.currentPage);
+      })
+      .catch((err) => {
+        console.error("Error cargando el PDF:", err);
+      });
   },
 };
